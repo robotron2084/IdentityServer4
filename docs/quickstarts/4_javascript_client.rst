@@ -120,7 +120,7 @@ The first thing is to add a helper function to log messages to the ``<pre>``::
             else if (typeof msg !== 'string') {
                 msg = JSON.stringify(msg, null, 2);
             }
-            document.getElementById('results').innerHTML += msg + '\r\n';
+            document.getElementById('results').innerText += msg + '\r\n';
         });
     }
 
